@@ -25,8 +25,7 @@ In C++, the switch statement is used when multiple situations need to be evaluat
  + Odd-Even check
  + Vowel Check
  + Finding the largest number from three given numbers by the user
- + Making a Calculator using Switch Case
- + Made a basic banking system using Switch Case
+ + Making car showroom using switch case
 
 # Algorihtms:
 Program 1:
@@ -36,13 +35,13 @@ To determine whether a user-entered number is even or odd.
 
 Steps:
 
-1. Start
+Step 1. Start
 
-2.  Ask the user to enter an integer (n)
+Step 2.  Ask the user to enter an integer (n)
 
-3. Read input into variable n
+Step 3. Read input into variable n
 
-4. Check divisibility of n by 2:
+Step 4. Check divisibility of n by 2:
 
 If n % 2 == 0, then:
 
@@ -52,7 +51,7 @@ Else:
 
 Display "This is an Odd number"
 
-5. End
+Step 5. End
 
 Program 2:
 
@@ -61,13 +60,13 @@ To determine whether the character entered by the user is a vowel or a consonant
 
 Steps:
 
-1. Start
+Step 1. Start
 
-2. Declare a character variable str
+Step 2. Declare a character variable str
 
-3. Ask the user to enter a character
+Step 3. Ask the user to enter a character
 
-4. Read the input into str
+Step 4. Read the input into str
 
    Check if the character is a vowel:
 
@@ -79,7 +78,7 @@ Else:
 
 Display "The Character entered is a Consonant"
 
-5. End
+Step 5. End
 
 Program 3
 
@@ -89,132 +88,69 @@ To determine and display the largest number among three user-entered integers.
 
 Steps:
 
-1. Start
+Step 1. Start
 
-2. Declare three integer variables: a, b, c
+Step 2. Declare three integer variables: a, b, c
 
-3. Ask user to enter three numbers
+Step 3. Ask user to enter three numbers
 
-4. Read input values into a, b, and c
+Step 4. Read input values into a, b, and c
 
-5. Initialize num ← a
+Step 5. Initialize num ← a
 
-6. Compare b and c with num:
+Step 6. Compare b and c with num:
 
 If b > num, set num ← b
 
 If c > num, set num ← c
 
-7. Display the largest number (num)
+Step 7. Display the largest number (num)
 
-8. End
+Step 8. End
 
 Program 4:
 
 Objective:
-To perform one of four basic arithmetic operations—Addition, Subtraction, Multiplication, or Division—based on user input.
+To stimulate a car showroom using switch case 
+Step 1: Start
 
-Steps:
+Step 2: Display Welcome Message
+Show the user a welcome message for the car showroom.
 
-1. Start
+Step 3: Show Brand Menu
+Display a list of 5 options:
 
-2. Declare float variables a, b, sum, sub, mul, Div and integer num
+Toyota
+BMW
+Tesla
+Hyundai
+Exit
 
-3. Ask user to enter two numbers
+Step 4: Get User Input
+Prompt the user to enter their choice (an integer between 1 and 5).
 
-4. Read inputs into a and b
+Read and store the input in the variable brandChoice.
 
-5. Ask user to select an operation:
+Step 5: Evaluate Choice Using Switch Case
+Use a switch statement to handle different cases based on the value of brandChoice.
 
-1 → Addition
+Step 6: Handle Each Case
+Case 1: Display details for Toyota (models, price range, and description).
 
-2 → Subtraction
+Case 2: Display details for BMW.
 
-3 → Multiplication
+Case 3: Display details for Tesla.
 
-4 → Division
+Case 4: Display details for Hyundai.
 
-6. Read input into num
+Case 5: Display a thank-you message and exit.
 
-7. Use a switch-case statement to perform the selected operation:
+Default: If input is not between 1 and 5, show an "Invalid choice" message.
 
-Case 1: sum ← a + b
+Step 7: End Message
+Display a message indicating that the simulation is complete.
 
-Case 2: sub ← a - b
-
-Case 3: mul ← a * b
-
-Case 4: Div ← a / b
-
-Default: Display invalid input message
-
-8. Display the result of the selected operation
-
-9. End
-
-Program 5:
-
-Objective:
-
-To simulate basic banking operations like withdraw, deposit, and taking a loan based on user input.
-
-Steps:
-
-1.Start
-
-2.Declare variables:
-
-amount (float) → user’s bank balance
-
-num (int) → operation choice
-
-withdraw, deposit, loan (float) → amounts for different operations
-
-remain1, remain2, remain3 (float) → updated balances
-
-3. Ask user to enter current bank statement (amount)
-
-4. Ask user to choose an operation:
-
-1 → Withdraw
-
-2 → Deposit
-
-3 → Take Loan
-
-5.Read user's choice into num
-
-6.Use switch-case to handle operations:
-
-Case 1 (Withdraw):
-
-Ask for withdraw amount
-
-If withdraw > amount: display "Insufficient Balance"
-
-Else calculate remain1 = amount - withdraw
-
-Display remaining amount
-
-Case 2 (Deposit):
-
-Ask for deposit amount
-
-Calculate remain2 = amount + deposit
-
-Display remaining amount
-
-Case 3 (Take Loan):
-
-Ask for loan amount
-
-Add loan to current balance: remain3 = amount + loan
-
-Display updated balance and mention 12% interest (if applicable)
-
-Default: display "Invalid input!!"
-
-7.End
+Step 8: End 
 
 
 # Conclusion:
